@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="clock.js" defer></script>
   <title>JIMBOB'S SITE :D | Clock</title>
 </head>
 <body>
@@ -37,6 +38,21 @@
     </div>
   </div>
 </nav>
+
+<div id="clock">
+  <div id="hour"></div>
+  <div id="min"></div>
+  <div id="sec"></div>
+</div>
+
+<div class="offsetContainer" id="offsetContainer">
+  <h2>Hour Offset</h2>
+  <input type="range" min="0" max="26" value="12" step="1" class="slider" id="hourOffset">
+  <h2>30 Minute & 15 Minute Offsets</h2>
+  <input type="checkbox" class="checkbox" id="thirtyMinOffset">
+  <input type="checkbox" class="checkbox" id="fifteenMinOffset">
+
+</div>
 
 </body>
 </html>
