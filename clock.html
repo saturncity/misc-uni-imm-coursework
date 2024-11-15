@@ -32,26 +32,50 @@
           <a class="nav-link" href="work.html">Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"><b>Clock</b></a>
+          <a class="nav-link active"><b>Clock</b></a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div id="clock">
-  <div id="hour"></div>
-  <div id="min"></div>
-  <div id="sec"></div>
+<div class="container pt-5 py-5 px-5 my-5">
+  <div class="row">
+    <div class="col text-center">
+      <h2>Your Local Time</h2>
+      <div id="localClock">
+        <div id="localHour"></div>
+        <div id="localMin"></div>
+        <div id="localSec"></div>
+      </div>
+      <h3 id="localTimeDisplay">00:00 (12:00 AM)</h3>
+      <p id="localTimezoneDisplay">Timezone: UTC+0:00</p>
+    </div>
+    <div class="col text-center">
+      <h2>Offset Time</h2>
+      <div id="offsetClock">
+        <div id="offsetHour"></div>
+        <div id="offsetMin"></div>
+        <div id="offsetSec"></div>
+      </div>
+      <h3 id="offsetTimeDisplay">00:00 (12:00 AM)<sup id="offsetDaySup"></sup></h3>
+      <p id="offsetTimezoneDisplay">Timezone: UTC+0:00</p>
+    </div>
+  </div>
 </div>
 
-<div class="offsetContainer" id="offsetContainer">
+<div class="offsetContainer text-center">
   <h2>Hour Offset</h2>
   <input type="range" min="0" max="26" value="12" step="1" class="slider" id="hourOffset">
-  <h2>30 Minute & 15 Minute Offsets</h2>
-  <input type="checkbox" class="checkbox" id="thirtyMinOffset">
-  <input type="checkbox" class="checkbox" id="fifteenMinOffset">
-
+  <h2>Minute Offsets</h2>
+  <label>
+    <input type="checkbox" class="checkbox" id="thirtyMinOffset">
+    +30 Minute Offset
+  </label>
+  <label>
+    <input type="checkbox" class="checkbox" id="fifteenMinOffset">
+    +15 Minute Offset
+  </label>
 </div>
 
 </body>
