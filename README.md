@@ -9,6 +9,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap%205.3.3-informational?style=for-the-badge&logo=bootstrap&logoColor=white&color=7952B3)
 
 ![No dependencies](https://img.shields.io/badge/dependencies-none-informational?style=for-the-badge&color=6E6E6E)
+![License](https://img.shields.io/badge/License-MIT-informational?style=for-the-badge&color=555555)
 
 </div>
 
@@ -117,6 +118,7 @@ misc-uni-imm-coursework/
 ├── project1.css      # Scoped to the float layout embedded in work.html
 ├── project2.css      # Empty file, still linked from work.html
 ├── script.js         # Empty file, linked from nothing
+├── LICENSE           # MIT
 ├── images/           # Clock face and hands, the Jimbob portrait, five rock photos
 ├── videos/           # californiagirls.mp4, 21MB, committed directly into the repo
 └── docs/
@@ -146,4 +148,6 @@ Not taking contributions. It's a graded submission from 2024 and changing it wou
 
 ## License
 
-No license file. That means default copyright applies and nobody else has permission to reuse this. The third-party video and photos noted above would need sorting out separately from any license I picked.
+MIT. See [`LICENSE`](LICENSE) for the full text.
+
+That covers the part I wrote: the five pages, the stylesheets and `clock.js`. It doesn't cover `videos/californiagirls.mp4` or the five rock photos, which aren't mine to license. See the last bullet under [Known issues](#known-issues).
